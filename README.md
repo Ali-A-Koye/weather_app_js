@@ -35,3 +35,15 @@ Create an application that fetches data from one of the above API.
 - Assign the issue to yourself so others know who is working on this issue.
 - Create a new pull request from that issue and also assign it to yourself, Github will automatically create a branch for you and give you instructions how to check it out.
 - After finishing the work, push your code and assign the team leader on that pull request so they can review the code.
+
+**Commit Message Format**
+
+Each commit message consists of a **header**, a **body** and a **footer**. The header has a special format that includes a **type** and a **subject**:
+
+```
+<type>: <subject>
+<BLANK LINE>
+<body>
+```
+
+The **header** is mandatory, while the **body** is optional but highly encouraged.
