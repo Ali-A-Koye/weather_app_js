@@ -28,3 +28,10 @@ Create an application that fetches data from one of the above API.
 - minimize the communication required in Slack, try to make them depend on review comments and task descriptions
 - They should create a branch locally with the naming convention `[issue id + issue title]` and then push it and submit a Pull Request that must be attached to the issue after
 - Make the tasks small but more, this can reduce conflicts and won't overwhelm them, not sure if it a good idea but I’m just experiencing here so they may do more than one task a week depending on how fast they are
+
+**Pull Requests**
+
+- Go to the issues board and create a new issue with the task assigned to you.
+- Assign the issue to yourself so others know who is working on this issue.
+- Create a new pull request from that issue and also assign it to yourself, Github will automatically create a branch for you and give you instructions how to check it out.
+- After finishing the work, push your code and assign the team leader on that pull request so they can review the code.
