@@ -122,4 +122,4 @@ Your project hierarchy should look something similar to this:
 - It's recommended to use Yarn to install the packages.
 - General use images should be inside a folder inside `src` under `images` and try to use `svg` as much as possible. Component specific images should be under their folders.
 - You should have prettier extension installed and make sure your code is well formatted before submitting it.
-- Test files will reside under the `test` folder inside the `src` and the extension is `.test.js`
+
