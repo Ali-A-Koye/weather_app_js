@@ -1,13 +1,13 @@
 # Weather App
 
 This website is fetching data from 
-1- [here](https://www.metaweather.com/api/) or [here](https://weatherstack.com/documentation) or [here] (https://api.windy.com/)
+1- [here](https://www.metaweather.com/api/) or [here](https://weatherstack.com/documentation) or [here](https://api.windy.com/)
 If you face issue fetching the data maybe [this](https://stackoverflow.com/questions/43262121/trying-to-use-fetch-and-pass-in-mode-no-cors/43268098) helps.
 
 ## Requirements
 Create an application that fetches data from one of the above API. 
 
-1- the app functionallity should look like this you are free to better designs.check the examples down for inspirations**
+1- the app functionallity should look like this you are free to change design be as creative as possible .check the examples down for inspirations**
 ![weather](Weather.png) 
 
 
