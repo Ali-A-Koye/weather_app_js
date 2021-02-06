@@ -6,6 +6,7 @@ If you face issue fetching the data maybe [this](https://stackoverflow.com/quest
 
 ## Requirements
 Create an application that fetches data from one of the above API. 
+
 1- the app functionallity should look like this you are free to better designs.check the examples down for inspirations**
 ![weather](Weather.png) 
 
