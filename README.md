@@ -13,7 +13,8 @@ Create an application that fetches data from one of the above API
 
 ## Optional
 
-1. Background image of the web page changes according to the Weather.
+
+1- Background image of the web page changes according to the Weather.
 
 ***PS**: You are free to use a CSS framework.*
 
