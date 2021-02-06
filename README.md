@@ -1,6 +1,6 @@
 # Weather App
 
-One of these APIs should do job.
+One of these APIs should do the job.
 1- [here](https://www.metaweather.com/api/) or [here](https://weatherstack.com/documentation) or [here](https://api.windy.com/)
 If you face issue fetching the data maybe [this](https://stackoverflow.com/questions/43262121/trying-to-use-fetch-and-pass-in-mode-no-cors/43268098) helps.
 
