@@ -47,3 +47,42 @@ Each commit message consists of a **header**, a **body** and a **footer**. The h
 ```
 
 The **header** is mandatory, while the **body** is optional but highly encouraged.
+
+**Type**
+
+Must be one of the following:
+
+- **Build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- **Doc**: Documentation only changes
+- **Feat**: A new feature
+- **Fix**: A bug fix
+- **Perf**: A code change that improves performance
+- **Refactor**: A code change that neither fixes a bug nor adds a feature
+- **Style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+
+**Subject**
+
+The subject contains a succinct description of the change:
+
+- use the imperative, present tense: “change” not “changed” nor “changes”
+- don’t capitalize the first letter
+- no dot (.) at the end
+
+**Body**
+
+Just as in the **subject**, use the imperative, present tense: “change” not “changed” nor “changes”. The body should include the motivation for the change and contrast this with previous behavior.
+
+## The Code
+
+- The code should be totally clean and checked line by line before committing and pushing.
+- You shouldn't leave any unnecessary comments in the code.
+- Don't leave any logs inside the code.
+- All variables should be `const` except for specific cases where you will need to use `let`
+- Variables should use camelCase naming convention
+- CSS classes should follow BEM naming convention. *You can find more about it [here](http://getbem.com/naming/).*
+- Leave only one empty line between CSS classes. This also goes for different purpose code blocks (like `imports` and variables under it).
+- Make sure your naming is right and not confusing i.e. the `Navbar` shouldn't be named `header` or when you fetch `movies` your function should return `movies` not `data`
+- Make sure you clean your imported modules or files that you don't use before committing. The same goes for any variable, function or piece of code not used.
+- Don't repeat yourself (DRY). Make sure the code you write is reusable and reduce repetition of information of all kinds. For example, don't write two functions that do the same or almost the same job. R*ead more about DRY [here](https://en.wikipedia.org/wiki/Don't_repeat_yourself).*
+
+
