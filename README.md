@@ -12,7 +12,7 @@ Create an application that fetches data from one of the above API.
 
 
 
-## Optionall
+## Optional
 
 
 1- Background image of the web page changes according to the Weather.
