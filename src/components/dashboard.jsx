@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MainComponenet from './main.jsx'
+import moment from 'moment';
+import _ from 'lodash';
+
 function Dashboard() {
     const [results, setResults] = useState([]);
     const [overlayDiv, setOverlayDiv] = useState(false);
     const [goToMain, SetGoToMain] = useState(false);
     const [input, setInput] = useState([]);
     const [searchText, setSearchText] = useState("Search");
-
+    const [Images, setImages] = useState([]);
 
 
     const [forCastData, setForCastData] = useState();
@@ -15,14 +18,33 @@ function Dashboard() {
     const [chartData, setChartData] = useState();
 
     async function fetchData() {
+        setOverlayDiv(true);
         setSearchText("Loading...")
-        if (input.length < 1) return setSearchText("2 Charc Required For Search...")
+        if (input.length < 1) {
+            setOverlayDiv(false);
+            return setSearchText("2 Charc Required For Search...")
+        }
         const result = await axios.get(
             `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${input.length > 1 ? input : ""}`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
             }
         });
+
+        if (result.data.length > 0) {
+            let arr = [];
+            for (const [i, el] of result.data.entries()) {
+                const image = await axios.get(
+                    `https://api.unsplash.com/search/photos?page=1&query=${result.data[i].title}&client_id=HCI-O91aDEHQTdfYiF5pBy6UTGvrlmzQOWXoMDLk3iA&per_page=1`, {
+                    headers: {
+                        'Access-Control-Allow-Origin': '*',
+                    }
+                });
+                arr.push(image.data.results[0].urls.regular);
+            }
+            setImages(arr);
+        }
+        setOverlayDiv(false);
         setSearchText("Search Again")
         setResults(result.data);
     }
@@ -41,13 +63,14 @@ function Dashboard() {
                 'Access-Control-Allow-Origin': '*',
             }
         })
-
+        let date = new Date();
         const chart = await axios.get(
-            `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/44418/2013/4/27/`, {
+            `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${v.woeid}/${moment(date).format('YYYY')}/${moment(date).format('MM')}/${moment(date).format('DD')}/`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
             }
         })
+        console.log(parseInt(chart.data[0].wind_speed, 10));
 
         setForCastData(forCast.data)
         setHeaderPart(Header.data)
@@ -64,13 +87,17 @@ function Dashboard() {
             { !goToMain && <div className="welcome-component">
                 {overlay}
                 <div>
-                    <h1>Weather App </h1>
+                    <h1 id="header-title">Weather App </h1>
                     <input type="text" onChange={(e) => setInput(e.target.value)} placeholder="City Name" />
                     <button onClick={fetchData} id="Search">{searchText}</button>
                 </div>
                 <ul>
                     {results.map((el, i) => {
-                        return <li><button className="items" key={i} onClick={e => cityClicked(e, el)}>{el.title}</button></li>
+                        return <li><button style={{
+                            backgroundPosition: 'center center',
+                            backgroundSize: 'cover',
+                            backgroundImage: `url(${Images[i]})`
+                        }} className="items" key={i} onClick={e => cityClicked(e, el)}>{el.title}</button></li>
                     })}
                 </ul>
 
