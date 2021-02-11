@@ -25,7 +25,7 @@ function Dashboard() {
             return setSearchText("2 Charc Required For Search...")
         }
         const result = await axios.get(
-            `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${input.length > 1 ? input : ""}`, {
+            `https://www.metaweather.com/api/location/search/?query=${input.length > 1 ? input : ""}`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
             }
@@ -52,20 +52,20 @@ function Dashboard() {
     async function cityClicked(event, v) {
         setOverlayDiv(true);
         const forCast = await axios.get(
-            `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/api/location/${v.woeid}`, {
+            `https://www.metaweather.com/api/api/location/${v.woeid}`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
             }
         })
         const Header = await axios.get(
-            `https://cors-anywhere.herokuapp.com/http://api.weatherstack.com/current?access_key=e439de947ffee26b8f766364f87e9a2c&query=${v.title}`, {
+            `http://api.weatherstack.com/current?access_key=e439de947ffee26b8f766364f87e9a2c&query=${v.title}`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
             }
         })
         let date = new Date();
         const chart = await axios.get(
-            `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${v.woeid}/${moment(date).format('YYYY')}/${moment(date).format('MM')}/${moment(date).format('DD')}/`, {
+            `https://www.metaweather.com/api/location/${v.woeid}/${moment(date).format('YYYY')}/${moment(date).format('MM')}/${moment(date).format('DD')}/`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
             }
