@@ -19,12 +19,14 @@
 
 input {
 padding:7px;
+box-shadow: 5px 10px rgb(53, 1, 58);;
+
 color:rgb(53, 1, 58);
  width: 70%;
  height: 3rem;
  font-size: 20px;
  border:2px rgb(53, 1, 58) solid;
- margin-top: 6%;
+ margin-top: 4%;
  transition: all;
  transition-duration: 0.5s;
 }
@@ -34,7 +36,7 @@ input:focus{
   width: 72%;
   height: 3rem;
   border-radius: 10px;
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
  ul li{
@@ -57,17 +59,19 @@ input:focus{
  #Search {
    font-size: 1rem;
   width: 30%;
-   margin-top: 5px;
-   border:none;
+  height: 60px;
+
+  margin-top: 1.2rem;
+  border:none;
    cursor: pointer;
-   background-color: rgb(219, 185, 250);
+   background-color: rgb(177, 118, 245);
    transition: all;
    transition-duration: 0.5s;
  }
  #Search:hover {
    width: 40%;
-   height: 45px;
-   margin-top: 6px;
+   height: 65px;
+   margin-top: 1.5rem;
    border:2px solid rgb(87, 20, 87);
    cursor: pointer;
    color:white;
@@ -84,8 +88,9 @@ input:focus{
 
  .items {
    width: 100%;
-   height: 4rem;
-   font-size: 1.5rem;
+   height: 19rem;
+   font-size: 6.5rem;
+   text-shadow: 2px 2px white;
    margin-top: 5px;
    border:none;
    cursor: pointer;
@@ -95,9 +100,8 @@ input:focus{
  }
 
  .items:hover {
-  width: 90%;
-  height: 45px;
   margin-top: 8px;
+  text-shadow: 2px 2px black;
   margin-bottom: 3px;
   border:2px solid rgb(221, 170, 94);
   cursor: pointer;
@@ -116,4 +120,16 @@ input:focus{
   background-position: center, center;
   height: 100%;
   z-index:99;
+}
+.chart-container{
+  height: 1000px;
+  width: 1000px;
+}
+
+
+
+#header-title{
+  margin-top: 2rem;
+  font-size: 3rem;
+  letter-spacing: 5px;
 }

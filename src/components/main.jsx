@@ -1,6 +1,8 @@
 import React  from 'react';
 import Header from './Header';
+import Chart from './chart.jsx'
 import './main.css'
+
 
 function Main(props) {
 
@@ -14,6 +16,9 @@ function Main(props) {
     return (
         <div class={background}>
             <Header data={props.HeaderPart}/>
+
+        <div>
+            <Chart data={props.chartData} />
         </div>
     );
 }
