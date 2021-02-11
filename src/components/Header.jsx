@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import './header.css'
 
 export default class Header extends React.Component {
@@ -9,13 +8,9 @@ export default class Header extends React.Component {
   }
 
   componentDidMount() {
-    let city = "london" //this variable is static for now until the search is fixed
-    axios.get(`http://api.weatherstack.com/current?access_key=e439de947ffee26b8f766364f87e9a2c&query=${city}`)
-      .then(res => {
-        const data = res.data;
-        console.log(data)
-        this.setState({ data, loading:false });
-      })
+    const data = this.props.data;
+    console.log(data)
+    this.setState({ data, loading:false });
   }
 
   render() {

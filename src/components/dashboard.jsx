@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import MainComponenet from './main.jsx'
 function Dashboard() {
     const [results, setResults] = useState([]);
     const [overlayDiv, setOverlayDiv] = useState(false);
-    const [goToMain, SetGoToMain] = useState(true);
+    const [goToMain, SetGoToMain] = useState(false);
     const [input, setInput] = useState([]);
     const [searchText, setSearchText] = useState("Search");
 

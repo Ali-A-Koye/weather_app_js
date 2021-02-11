@@ -1,11 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React  from 'react';
 import Header from './Header';
+import './main.css'
 
 function Main(props) {
-    console.log(props);
+
+    console.log(props.HeaderPart);
+
+    let background= 'background-day'
+    if(props.HeaderPart.current.is_day === 'no'){
+        background ='background-night'
+    }
+
     return (
-        <div>
-            <Header/>
+        <div class={background}>
+            <Header data={props.HeaderPart}/>
         </div>
     );
 }

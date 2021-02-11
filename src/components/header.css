@@ -2,18 +2,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(61, 61, 61)
+    color: rgb(61, 61, 61);
+    
 }
 
 .forcast {
     border:2px rgba(53, 1, 58, 0.075) solid;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 70%;
     padding :20px;
     display:flex;
     flex-direction: column;
     justify-content:flex-start;
     position: relative;
+    background-color:rgba(255, 255, 255, 0.70);
+    margin-top: 30px;
 }
 
 .time{
