@@ -3,6 +3,7 @@
 
 *{
   font-family:  'Big Shoulders Display', cursive;
+  color: rgb(61, 61, 61);
 }
 .App {
   text-align: center;
@@ -132,4 +133,12 @@ input:focus{
   margin-top: 2rem;
   font-size: 3rem;
   letter-spacing: 5px;
+}
+
+#SearchTitle{
+  font-size: 6rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px  rgb(107, 3, 204);;
+margin-bottom: 0px;
+margin-top: 10px;
 }

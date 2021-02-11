@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import MainComponenet from './main.jsx'
 import moment from 'moment';
-import weather from '../weather.png'
 function Dashboard() {
     const [results, setResults] = useState([]);
     const [overlayDiv, setOverlayDiv] = useState(false);
@@ -85,7 +84,7 @@ function Dashboard() {
             { !goToMain && <div className="welcome-component">
                 {overlay}
                 <div>
-                    <img src={weather} alt="Weather App"></img>
+                    <h1 id="SearchTitle">Weather App</h1>
                     <input type="text" onChange={(e) => setInput(e.target.value)} placeholder="Type City Name...." />
                     <button onClick={fetchData} id="Search">{searchText}</button>
                 </div>

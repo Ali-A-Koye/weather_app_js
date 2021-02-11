@@ -71,7 +71,7 @@ function Chart({ data }) {
 
         <div>
             <div class="chart-container">
-                <h1>Today's OverCast</h1>
+                <h1 style={{ paddingTop: '13px' }}>Overcast throughout the day</h1>
                 <Line data={chartFunction} />
             </div>
 
