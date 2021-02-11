@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
-
-*{
-  font-family:  'Big Shoulders Display', cursive;
+* {
+  font-family: "Big Shoulders Display", cursive;
   color: rgb(61, 61, 61);
 }
 .App {
   text-align: center;
 }
 
-.welcome-component{
+.welcome-component {
   height: 100vh;
   width: 100%;
 }
@@ -17,96 +16,93 @@
   outline: none;
 }
 
-
 input {
-padding:7px;
-box-shadow: 5px 10px rgb(53, 1, 58);;
+  padding: 7px;
+  box-shadow: 5px 10px rgb(53, 1, 58);
 
-color:rgb(53, 1, 58);
- width: 70%;
- height: 3rem;
- font-size: 20px;
- border:2px rgb(53, 1, 58) solid;
- margin-top: 4%;
- transition: all;
- transition-duration: 0.5s;
+  color: rgb(53, 1, 58);
+  width: 70%;
+  height: 3rem;
+  font-size: 20px;
+  border: 2px rgb(53, 1, 58) solid;
+  margin-top: 4%;
+  transition: all;
+  transition-duration: 0.5s;
 }
 
-input:focus{
-  border:4px rgb(53, 1, 58) solid;
+input:focus {
+  border: 4px rgb(53, 1, 58) solid;
   width: 72%;
   height: 3rem;
   border-radius: 10px;
   margin-top: 4%;
 }
 
- ul li{
-  margin:auto;
+ul li {
+  margin: auto;
   width: 100%;
   text-decoration: none;
   height: 7%;
   background-color: white;
- }
- ul{
+}
+ul {
   padding: 0px;
   margin-top: 3%;
   list-style-type: none;
- }
- button{
-   width: 50%;
-   height: 40px;
- }
+}
+button {
+  width: 50%;
+  height: 40px;
+}
 
- #Search {
-   font-size: 1rem;
+#Search {
+  font-size: 1rem;
   width: 30%;
   height: 60px;
-   margin-top: 1.2rem;
-   border:none;
-   cursor: pointer;
-   background-color: rgb(177, 118, 245);
-   transition: all;
-   transition-duration: 0.5s;
- }
- #Search:hover {
-   width: 40%;
-   height: 65px;
-   margin-top: 1.5rem;
-   border:2px solid rgb(87, 20, 87);
-   cursor: pointer;
-   color:white;
-   background-color: rgb(49, 3, 92);
- }
+  margin-top: 1.2rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(177, 118, 245);
+  transition: all;
+  transition-duration: 0.5s;
+}
+#Search:hover {
+  width: 40%;
+  height: 65px;
+  margin-top: 1.5rem;
+  border: 2px solid rgb(87, 20, 87);
+  cursor: pointer;
+  color: white;
+  background-color: rgb(49, 3, 92);
+}
 
- 
- ul li{
-  margin:auto;
+ul li {
+  margin: auto;
   width: 100%;
   text-decoration: none;
+}
 
- }
+.items {
+  width: 100%;
+  height: 19rem;
+  font-size: 6.5rem;
+  text-shadow: 2px 2px white;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(253, 183, 103);
+  transition: all;
+  transition-duration: 0.5s;
+}
 
- .items {
-   width: 100%;
-   height: 19rem;
-   font-size: 6.5rem;
-   text-shadow: 2px 2px white;
-   margin-top: 5px;
-   border:none;
-   cursor: pointer;
-   background-color: rgb(253, 183, 103);
-   transition: all;
-   transition-duration: 0.5s;
- }
-
- .items:hover {
+.items:hover {
   margin-top: 8px;
   text-shadow: 2px 2px black;
   margin-bottom: 3px;
-  border:2px solid rgb(221, 170, 94);
+  border: 2px solid rgb(221, 170, 94);
   cursor: pointer;
-  color:white;
-  background-color:  rgb(131, 80, 5);
+  color: white;
+  background-color: rgb(131, 80, 5);
 }
 
 #overlayDiv {
@@ -119,26 +115,24 @@ input:focus{
   background-size: cover;
   background-position: center, center;
   height: 100%;
-  z-index:99;
+  z-index: 99;
 }
-.chart-container{
-  margin:auto;
+.chart-container {
+  margin: auto;
   width: 1000px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-
-
-#header-title{
+#header-title {
   margin-top: 2rem;
   font-size: 3rem;
   letter-spacing: 5px;
 }
 
-#SearchTitle{
+#SearchTitle {
   font-size: 6rem;
   letter-spacing: 2px;
-  text-shadow: 2px 2px  rgb(107, 3, 204);;
-margin-bottom: 0px;
-margin-top: 10px;
+  text-shadow: 2px 2px rgb(107, 3, 204);
+  margin-bottom: 0px;
+  margin-top: 10px;
 }

@@ -1,18 +1,17 @@
-.background-day { 
-    background: url(/images/4.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    background-size: cover;
+.background-day {
+  background: url(/images/4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.background-night { 
-    background: url(/images/9.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-attachment: fixed;
-    -o-background-size: cover;
-    background-size: cover;
-    
+.background-night {
+  background: url(/images/9.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  background-size: cover;
 }
