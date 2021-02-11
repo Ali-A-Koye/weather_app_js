@@ -19,6 +19,8 @@
 
 input {
 padding:7px;
+box-shadow: 5px 10px rgb(53, 1, 58);;
+
 color:rgb(53, 1, 58);
  width: 70%;
  height: 3rem;
@@ -59,8 +61,8 @@ input:focus{
   width: 30%;
   height: 60px;
 
-   margin-top: 5px;
-   border:none;
+  margin-top: 1.2rem;
+  border:none;
    cursor: pointer;
    background-color: rgb(219, 185, 250);
    transition: all;
@@ -69,7 +71,7 @@ input:focus{
  #Search:hover {
    width: 40%;
    height: 65px;
-   margin-top: 14px;
+   margin-top: 1.5rem;
    border:2px solid rgb(87, 20, 87);
    cursor: pointer;
    color:white;
