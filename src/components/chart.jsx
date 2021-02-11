@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import _ from 'lodash'
-import { Line, defaults } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import moment from 'moment';
 
 function Chart({ data }) {

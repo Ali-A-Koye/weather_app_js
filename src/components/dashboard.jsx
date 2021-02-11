@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import MainComponenet from './main.jsx'
 import moment from 'moment';
-import _ from 'lodash';
 
 function Dashboard() {
     const [results, setResults] = useState([]);
@@ -33,7 +32,7 @@ function Dashboard() {
 
         if (result.data.length > 0) {
             let arr = [];
-            for (const [i, el] of result.data.entries()) {
+            for (const [i] of result.data.entries()) {
                 const image = await axios.get(
                     `https://api.unsplash.com/search/photos?page=1&query=${result.data[i].title}&client_id=HCI-O91aDEHQTdfYiF5pBy6UTGvrlmzQOWXoMDLk3iA&per_page=1`, {
                     headers: {

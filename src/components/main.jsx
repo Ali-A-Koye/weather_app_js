@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Chart from './chart.jsx'
 function Main(props) {
     console.log(props);
