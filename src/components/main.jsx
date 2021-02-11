@@ -14,9 +14,12 @@ function Main(props) {
     }
 
     return (
-        <div class={background}>
+        <div className={background}>
             <Header data={props.HeaderPart} />
-            <Chart data={props.chartData} />
+            <div className="chart-Container">
+                <Chart data={props.chartData} />
+            </div>
+
         </div>
     );
 }

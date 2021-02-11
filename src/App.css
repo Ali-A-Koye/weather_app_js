@@ -60,9 +60,8 @@ input:focus{
    font-size: 1rem;
   width: 30%;
   height: 60px;
-
-  margin-top: 1.2rem;
-  border:none;
+   margin-top: 1.2rem;
+   border:none;
    cursor: pointer;
    background-color: rgb(177, 118, 245);
    transition: all;
@@ -122,8 +121,9 @@ input:focus{
   z-index:99;
 }
 .chart-container{
-  height: 1000px;
+  margin:auto;
   width: 1000px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 

@@ -23,6 +23,7 @@ function Chart({ data }) {
     const chartFunction = (canvas) => {
         return {
             labels: Hours,
+            backgroundColor: 'white',
             datasets: [{
                 fillColor: "rgba(220,220,220,0)",
                 strokeColor: "rgba(220,180,0,1)",
