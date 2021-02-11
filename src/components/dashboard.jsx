@@ -4,7 +4,7 @@ import MainComponenet from './main.jsx'
 function Dashboard() {
     const [results, setResults] = useState([]);
     const [overlayDiv, setOverlayDiv] = useState(false);
-    const [goToMain, SetGoToMain] = useState(false);
+    const [goToMain, SetGoToMain] = useState(true);
     const [input, setInput] = useState([]);
     const [searchText, setSearchText] = useState("Search");
 
