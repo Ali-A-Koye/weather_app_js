@@ -69,7 +69,6 @@ function Dashboard() {
                 'Access-Control-Allow-Origin': '*',
             }
         })
-        console.log(parseInt(chart.data[0].wind_speed, 10));
 
         setForCastData(forCast.data)
         setHeaderPart(Header.data)
@@ -87,7 +86,7 @@ function Dashboard() {
                 {overlay}
                 <div>
                     <img src={weather} alt="Weather App"></img>
-                    <input type="text" onChange={(e) => setInput(e.target.value)} placeholder="City Name" />
+                    <input type="text" onChange={(e) => setInput(e.target.value)} placeholder="Type City Name...." />
                     <button onClick={fetchData} id="Search">{searchText}</button>
                 </div>
                 <ul>

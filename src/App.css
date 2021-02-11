@@ -64,7 +64,7 @@ input:focus{
   margin-top: 1.2rem;
   border:none;
    cursor: pointer;
-   background-color: rgb(219, 185, 250);
+   background-color: rgb(177, 118, 245);
    transition: all;
    transition-duration: 0.5s;
  }
