@@ -10,7 +10,6 @@ function Chart({ data }) {
   });
   data = _.uniqBy(data, "created");
 
-  console.log(data);
   data = _.sortBy(data, "created");
   let Hours = _.map(data, "created");
   let theTemp = _.map(data, "the_temp");

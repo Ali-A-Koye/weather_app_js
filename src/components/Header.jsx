@@ -9,7 +9,6 @@ export default class Header extends React.Component {
 
   componentDidMount() {
     const data = this.props.data;
-    console.log(data);
     this.setState({ data, loading: false });
   }
 
