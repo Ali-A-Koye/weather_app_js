@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-
+import Chart from './chart.jsx'
 function Main(props) {
     console.log(props);
     return (
         <div>
-            This is Main
+            <Chart data={props.chartData} />
         </div>
     );
 }
