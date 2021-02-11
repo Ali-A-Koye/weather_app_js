@@ -7,7 +7,11 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
+    "chart.js": "^2.9.4",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
     "react": "^16.13.1",
+    "react-chartjs-2": "^2.11.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },
