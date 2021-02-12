@@ -3,7 +3,6 @@ import "./table.css"
 
 export default function Table(props) {
   const data = props.forCastData;
-console.log(data);
   var days = [
     "Sunday",
     "Monday",
