@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import "./table.css"
 
 export default function Table(props) {
   const data = props.forCastData;
@@ -37,8 +38,8 @@ console.log(data);
     return (
       <Fragment>
 
-      <div>
-      <div>{Datee[0]}<br/>  Temperature: {Math.round(Temp[0]).toFixed(0)} °C<br/>
+      <div class="container">
+      <div class="block_one">{Datee[0]}<br/>  Temperature: {Math.round(Temp[0]).toFixed(0)} °C<br/>
       Maximum Temperature: {Math.round(MaxTemp[0]).toFixed(0)} °C<br/>
       Minimum Temperature: {Math.round(MinTemp[0]).toFixed(0)} °C<br/> 
       Wind Speed: {Math.round(WindSpeed[0]).toFixed(0)} mph<br/>
@@ -48,7 +49,7 @@ console.log(data);
      Direction: {direction[0]} <br/>
      </div>
 
-     <div>{Datee[1]}<br/>  Temperature: {Math.round(Temp[1]).toFixed(0)} °C<br/>
+     <div class="block_two">{Datee[1]}<br/>  Temperature: {Math.round(Temp[1]).toFixed(0)} °C<br/>
      Maximum Temperature: {Math.round(MaxTemp[1]).toFixed(0)} °C<br/>
      Minimum Temperature: {Math.round(MinTemp[1]).toFixed(0)} °C<br/> 
      Wind Speed: {Math.round(WindSpeed[1]).toFixed(0)} mph<br/>
@@ -58,7 +59,7 @@ console.log(data);
     Direction: {direction[1]} <br/>
     </div>
 
-    <div>{Datee[2]}<br/>  Temperature: {Math.round(Temp[2]).toFixed(0)} °C<br/>
+    <div class="block_three">{Datee[2]}<br/>  Temperature: {Math.round(Temp[2]).toFixed(0)} °C<br/>
     Maximum Temperature: {Math.round(MaxTemp[2]).toFixed(0)} °C<br/>
     Minimum Temperature: {Math.round(MinTemp[2]).toFixed(0)} °C<br/> 
     Wind Speed: {Math.round(WindSpeed[2]).toFixed(0)} mph<br/>
@@ -68,7 +69,7 @@ console.log(data);
    Direction: {direction[2]} <br/>
    </div>
 
-   <div>{Datee[3]}<br/>  Temperature: {Math.round(Temp[3]).toFixed(0)} °C<br/>
+   <div  class="block_four">{Datee[3]}<br/>  Temperature: {Math.round(Temp[3]).toFixed(0)} °C<br/>
    Maximum Temperature: {Math.round(MaxTemp[3]).toFixed(0)} °C<br/>
    Minimum Temperature: {Math.round(MinTemp[3]).toFixed(0)} °C<br/> 
    Wind Speed: {Math.round(WindSpeed[3]).toFixed(0)} mph<br/>
@@ -78,7 +79,7 @@ console.log(data);
   Direction: {direction[3]} <br/>
   </div>
 
-  <div>{Datee[4]}<br/>  Temperature: {Math.round(Temp[4]).toFixed(0)} °C<br/>
+  <div  class="block_five">{Datee[4]}<br/>  Temperature: {Math.round(Temp[4]).toFixed(0)} °C<br/>
   Maximum Temperature: {Math.round(MaxTemp[4]).toFixed(0)} °C<br/>
   Minimum Temperature: {Math.round(MinTemp[4]).toFixed(0)} °C<br/> 
   Wind Speed: {Math.round(WindSpeed[4]).toFixed(0)} mph<br/>
@@ -88,7 +89,7 @@ console.log(data);
  Direction: {direction[4]} <br/>
  </div>
 
- <div>{Datee[5]}<br/>  Temperature: {Math.round(Temp[5]).toFixed(0)} °C<br/>
+ <div  class="block_six">{Datee[5]}<br/>  Temperature: {Math.round(Temp[5]).toFixed(0)} °C<br/>
  Maximum Temperature: {Math.round(MaxTemp[5]).toFixed(0)} °C<br/>
  Minimum Temperature: {Math.round(MinTemp[5]).toFixed(0)} °C<br/> 
  Wind Speed: {Math.round(WindSpeed[5]).toFixed(0)} mph<br/>
