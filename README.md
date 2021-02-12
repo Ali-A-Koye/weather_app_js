@@ -4,7 +4,9 @@
 
 - [React ](https://reactjs.org/)- A JavaScript library for building front-end user interfaces
 
-### Interface overview:
+### Interface overview
+
+![overview](public/images/App-Screenshot%20.png)
 
 
 ### How to use
