@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Chart from "./chart.jsx";
+import Table from "./table";
 import "./main.css";
 
 function Main(props) {
@@ -14,6 +15,8 @@ function Main(props) {
       <Header data={props.HeaderPart} />
       <div className="chart-Container">
         <Chart data={props.chartData} />
+        <Table  forCastData={props.forCastData} />
+
       </div>
     </div>
   );
