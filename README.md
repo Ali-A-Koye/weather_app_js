@@ -24,6 +24,8 @@ When you first open the app you will be greeted with the search box where you ca
 		├── header.css
 		├── main.jsx
 		├── main.css
+		├── table.css
+		├── table.jsx
 		├── chart.jsx
 ```
 
